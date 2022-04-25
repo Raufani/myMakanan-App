@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
     "mdbreact": "^5.2.0",
+    "npm-watch": "^0.11.0",
     "react": "^18.0.0",
     "react-data-table-component": "^6.11.1",
     "react-dom": "^18.0.0",
@@ -39,4 +40,5 @@
     ]
   },
   "proxy": "http://localhost:4000"
+  
 }

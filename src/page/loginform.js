@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import App from '../App.js'
 import '../App.css'
+import '../assets/menu.css'
+import '../assets/style.css'
 import { Redirect, Route } from "react-router";
 
 
@@ -59,15 +61,16 @@ class LoginForm extends Component{
 
     render(){
         return(
-            <div className="card-center">
+          <div className="app">
+          <div className="card-center">
             <div className="title">Sign In</div>
             <form action='//localhost:4000/user/login' method='post'>
-              <div className="input-container">
+              <div className="input-container center">
                 <label>Username </label>
                 <input type="text" name="username" id="username"  onChange={this.HendelOnchange} value={this.state.DataUserNew.username} required />
               </div>
 
-              <div className="input-container">
+              <div className="input-container center">
                 <label>Password </label>
                 <input type="password" name="password" id="password"  onChange={this.HendelOnchange} value={this.state.DataUserNew.password} required />
               </div>
@@ -77,7 +80,7 @@ class LoginForm extends Component{
                 </div>
               
             </form>
-          </div>
+          </div></div>
         )
     }
 }

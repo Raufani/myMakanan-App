@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ReactDOM from "react-dom";
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter, Router, Switch, Route} from 'react-router-dom'
 
 import AllData from './datatables/datatable'
 import LoginForm from './page/loginform';
@@ -27,27 +27,18 @@ function App() {
     
   }
 
-  if(localStorage.getItem("response")){
-     return (
-    <div className="App">
-      <header className="App-header">
 
-        <Router >
-            <Switch>
-              <div className="app-content">
-                
-                <LoginForm />
-                {
-                  <Route path="/dashboard" exact component={AllData} />
-                }
-                
-              </div>
-            </Switch>
-          </Router >
-      </header>
-    </div>
+  
+  
+     return (
+      <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={LoginForm} />
+        <Route path="/dashboard" exact component={AllData} />
+      </Switch>
+    </BrowserRouter>
     );               
-  } 
+  
 
   
 }
