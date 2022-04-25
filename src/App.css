@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a1c5bc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.my-button {
+  /* Green */
+  /*float: left;*/
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-blue {
+  background-color: #008CBA;
+}
+
+
+/* Blue */
+
+.btn-red {
+  background-color: #f44336;
 }
