@@ -73,7 +73,7 @@ function AllData() {
 
         cell: row => (
           <div>
-          <button className='my-button btn-blue' onClick={()=>HendelUpdate(user)}>
+          <button className='my-button btn-blue' onClick={()=>HendelUpdate(row)}>
               Edit
           </button>
           
