@@ -3,6 +3,7 @@ import App from '../App.js'
 import '../App.css'
 import '../assets/menu.css'
 import '../assets/style.css'
+import '../assets/background.css'
 import { Redirect, Route } from "react-router";
 
 
@@ -61,7 +62,7 @@ class LoginForm extends Component{
 
     render(){
         return(
-          <div className="app">
+          <div className='img-bg1'>
           <div className="card-center">
             <div className="title">Sign In</div>
             <form action='//localhost:4000/user/login' method='post'>
